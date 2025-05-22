@@ -23,6 +23,7 @@ app.http('saveemail', {
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
+        pool_mode: process.env.DB_POOL_MODE
     });
 
     try {
