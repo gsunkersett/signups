@@ -33,10 +33,6 @@
         }
     });
 
-    (async function() {
-        const text  = await (await fetch(`/api/signups`)).text();
-        document.querySelector('#name').textContent = text;
-    }());
     </script>
 </body>
 
