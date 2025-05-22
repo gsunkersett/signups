@@ -38,7 +38,7 @@ app.http('saveemail', {
         context.log(`Database error: ${error.message}`);
         return {
             status: 500,
-            body: "Internal Server Error."
+            body: error.message
         };
     } finally {
         await client.end();
